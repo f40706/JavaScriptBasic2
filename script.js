@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 /* function processData(data1, data2) {
   const content = `data1 = ${data1}, data2 = ${data2}`;
   return content;
@@ -69,36 +69,41 @@ console.log(list.includes('google'))//true
 console.log(list.includes('ooo'))//false */
 
 const dictionary = {
-  name: '1234',
+  name: "1234",
   data: 24,
   age: 18,
   ageFunc: function () {
-    return this.age > 30
-  }
-}
+    return this.age > 30;
+  },
+};
 
-console.log(dictionary)
+console.log(dictionary);
 
 //出現提示視窗，並可以輸入參數
-const interestedIn = prompt("please!")
-if (dictionary[interestedIn]) { //找不到會是undefined
-  console.log(dictionary[interestedIn])
+const interestedIn = prompt("please!");
+if (dictionary[interestedIn]) {
+  //找不到會是undefined
+  console.log(dictionary[interestedIn]);
 } else {
-  console.log("NO!")
+  console.log("NO!");
 }
+debugger;
+console.log(dictionary.ageFunc());
+dictionary["age"] = 31;
+console.log(dictionary["ageFunc"]());
 
-console.log(dictionary.ageFunc())
-dictionary['age'] = 31
-console.log(dictionary['ageFunc']())
-
-const list = []
+const list = [];
 
 for (let i = 0; i < 10; i++) {
   // console.log(i)
-  list.push(typeof i)
+  list.push(typeof i);
 }
 
-console.log(list)
+console.log(list);
+console.warn(list);
+console.error(list);
+
+console.table(dictionary);
 
 /*
 ///////////////////////////////////////
