@@ -1,0 +1,30 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: blanchedalmond;
+}
+
+.first {
+  color: red;
+}
+
+/* border-box是指寬固定為200px
+padding左+右假如是50
+實際內部僅剩150px的空間可以擺放
+
+content-box是指寬固定為200px
+padding左+右假如是50
+實際內部依然還有200px的空間可以擺放
+且實際大小會變成200+padding-left+padding-right
+*/
+#name {
+  width: 400px;
+  height: 200px;
+  background-color: pink;
+  border: 5px solid #444;
+  padding: 30px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
