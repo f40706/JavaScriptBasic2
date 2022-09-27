@@ -80,14 +80,14 @@ const dictionary = {
 console.log(dictionary);
 
 //出現提示視窗，並可以輸入參數
-const interestedIn = prompt("please!");
+/* const interestedIn = prompt("please!");
 if (dictionary[interestedIn]) {
   //找不到會是undefined
   console.log(dictionary[interestedIn]);
 } else {
   console.log("NO!");
 }
-debugger;
+debugger; */
 console.log(dictionary.ageFunc());
 dictionary["age"] = 31;
 console.log(dictionary["ageFunc"]());
